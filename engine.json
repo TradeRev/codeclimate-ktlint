@@ -1,0 +1,11 @@
+{
+  "name": "codeclimate-ktlint",
+  "description": "codeclimate-ktlint",
+  "maintainer": {
+    "name": "Hongyu Chen",
+    "email": "hongyu.chen@traderev.com"
+  },
+  "languages": ["Kotlin"],
+  "version": "1.0",
+  "spec_version": "0.0.1"
+}

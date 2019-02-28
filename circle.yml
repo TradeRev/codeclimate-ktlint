@@ -1,0 +1,17 @@
+machine:
+  services:
+    - docker
+  environment:
+    image_name: codeclimate-ktlint
+
+dependencies:
+  override:
+    - echo "skip dependency installation"
+
+test:
+  override:
+    - docker build -t=codeclimate/$image_name .
+
+notify:
+  webhooks:
+    - url: https://cc-slack-proxy.herokuapp.com/circle

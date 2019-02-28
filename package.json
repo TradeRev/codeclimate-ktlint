@@ -1,0 +1,13 @@
+{
+  "name": "codeclimate-ktlint",
+  "version": "0.0.1",
+  "description": "ktlint for CodeClimate",
+  "author": "Code Climate Community",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/codeclimate-community/codeclimate-ktlint.git"
+  },
+  "dependencies": {
+    "ktlint": "^0.30.1"
+  }
+}
