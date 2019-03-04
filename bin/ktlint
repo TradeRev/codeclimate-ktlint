@@ -1,15 +1,7 @@
-#!/usr/bin/env node
+#!/bin/bash
+set -e
 
-/* jshint multistr: true */
-process.chdir('/code');
+./bin/ktlint
 
-var exec = require('child_process').execSync;
-var fs = require('fs');
-var Watson = require('ktlint');
-var CODE_DIR = 'app';
-try {
-  fs.accessSync('app');
-  CODE_DIR ='app';
-} catch (e) {
-  CODE_DIR ='addon';
-}
+printf "current directory is %s\n" "$PWD"
+ktlint --reporter=plain --reporter=checkstyle,output=ktlint-report-in-checkstyle-format.xml
